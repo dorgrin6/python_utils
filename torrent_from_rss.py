@@ -25,7 +25,7 @@ res = requests.get(xml_uri)
 try:
     res.raise_for_status()
 except Exception as e:
-    print("couldn't open {}.\n Error: {}".format(xml_uri, e))
+    print("couldn't open {}.\nError: {}".format(xml_uri, e))
 
 soup = bs4.BeautifulSoup(res.text, features="xml")
 
