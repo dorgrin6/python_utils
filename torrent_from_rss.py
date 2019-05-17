@@ -12,7 +12,7 @@ DELIMITER_LEN = 3  # assuming 'dn=' is del
 
 if len(sys.argv) > 1:
     download_pattern = sys.argv[1]
-    if len(sys.argv > 2):
+    if len(sys.argv) > 2:
         xml_uri = sys.argv[2]
 
 
